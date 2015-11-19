@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="css/reset.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700,800' rel='stylesheet' type='text/css'>
+	
+	<title>WORKANA</title>
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav>
+				<img src="imagenes/logo_workana.png" alt="">
+				<div class="links">
+					<ul>
+						<li>
+							<a href="registrate">Registrate</a>
+						</li>
+						<li id="separador">
+							<a href="ingresa">Ingresa</a>
+						</li>
+						<li>
+							<button class="btn_proyecto">Crea un Proyecto <span class="ion-arrow-right-b"></span></button>
+						</li>
+					</ul>
+					
+				</div>
+			</nav>
+			<div class="titulo">
+				<h2>CONOCE MÁS <br> SOBRE LOS BENEFICIOS <br> PARA AGENCIAS</h2>
+			</div>
+			<button class="btn_titulo">Unete al programa</button>
+		</div>
+	</header>
+	<section class="por_que">
+		<div class="container">
+			<h2>POR QUÉ WORKANA AGENCIAS?</h2>
+				<div>
+					<article>
+					<p>Publicás tu proyecto, los mejores profesionales de Latinoamérica con el perfil que necesitás lo analizan y hacen sus postulaciones. Recibes las propuestas, eliges al freelancer que más te conviene y empiezan a trabajar juntos en tu sueño.
+					Es fácil, seguro y rentable:
+					<br>
+					<br>
+					Workana te ofrece un entorno 100% seguro y transparente para trabajar.</p>
+					</article>
+				
+					<div>
+						<ul>
+							<li>Acceso a los mejores talentos freelancers de la región con rentabilidad.</li>
+							<li>Terciarización resuelta (quien, cuando, cuanto y como).</li>
+							<li>Privacidad garantizada.</li>
+							<li>Programa de beneficios.</li>
+						</ul>
+						<button>Prueba ahora</button>
+					</div>
+			</div>
+		</div>
+	</section>	
+	<section class="recursos">
+		<div>	
+			
+		</div>
+	</section>
+	<section class="caruosel">
+		<div class="container">
+			<div class="titulos">
+				<div class="txt_perf1">
+					<h2>No puedo expresar la grata experiencia de encontrar tanto talento y profesionalidad reunida en un solo lugar</h2>
+					<img src="imagenes/fotoboton.png">
+				</div>
+				<div class="txt_perf">
+					<h2>Me gusta mucho codear</h2>
+					<img src="imagenes/fotoboton.png">
+				</div>
+				<div class="txt_perf">
+					<h2>Esto es JavaScript</h2>
+					<img src="imagenes/fotoboton.png">
+				</div>
+				<div class="txt_perf">
+					<h2>En coderhouse aprendi a Codear</h2>
+					<img src="imagenes/fotoboton.png">
+				</div>
+			</div>
+			<ul>
+				<li>
+					<div>
+						<img src="imagenes/fotobotonbn.png" class="active" id="foto_perf1">
+						<h3>Alex Ducoix</h3>
+						<h4>Executive Creative Director <br> Comunicatios Ads</h4>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img data-src="imagenes/fotoboton.png" src="imagenes/fotobotonbn.png" id="foto_perf2">
+						<h3>Alex Ducoix</h3>
+						<h4>Executive Creative Director <br> Comunicatios Ads</h4>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="imagenes/fotobotonbn.png" id="foto_perf3">
+						<h3>Alex Ducoix</h3>
+						<h4>Executive Creative Director <br> Comunicatios Ads</h4>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="imagenes/fotobotonbn.png" id="foto_perf4">
+						<h3>Alex Ducoix</h3>
+						<h4>Executive Creative Director <br> Comunicatios Ads</h4>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="imagenes/fotobotonbn.png" id="foto_perf5">
+						<h3>Alex Ducoix</h3>
+						<h4>Executive Creative Director <br> Comunicatios Ads</h4>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img data-src="imagenes/fotoboton.png" src="imagenes/fotobotonbn.png" id="foto_perf6" text="Hola como estas">
+						<h3>Alex Ducoix</h3>
+						<h4>Executive Creative Director <br> Comunicatios Ads</h4>
+					</div>
+				</li>
+			</ul>
+			
+		</div>
+	</section>
+	<section>
+		<div>
+			
+		</div>
+	</section>
+	<section class="que_es">
+		<div class="container">
+			<div>
+				<h2>QUÉ ES WORKANA</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quae, quasi molestias ducimus animi voluptatibus, consequuntur maiores, aliquam suscipit natus possimus eaque facilis nihil nobis hic voluptates dolorem vitae expedita.</p>
+			</div>
+			
+		</div>
+	</section>
+	
+	
+</body>
+<script type="text/javascript">
+
+	$(document).on('ready', function(){
+	$('.active').attr('src', 'imagenes/fotoboton.png');
+	$(".txt_perf1").setStyle('visibility': 'visible',
+		'position': 'relative');
+	
+
+
+$('#foto_perf2').click(function(){
+	console.log(this);
+	var srcNew = $(this).attr('data-src');
+	$(this).attr('src', srcNew);
+	$("#txt_perf2").addClass("visible");
+})
+$('#foto_perf5').click(function(){
+	console.log(this);
+	var srcNew = $(this).attr('data-src');
+	$(this).attr('src', srcNew);
+	$('#txt_carousel').attr('src','text')
+})
+})
+
+
+
+</script>
+</html>
